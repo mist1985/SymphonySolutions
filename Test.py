@@ -23,8 +23,9 @@ vac_button = HomePage(driver)
 vac_button.click_on_vacancy()
 
 vacancies = VacancyPage(driver)
-    # vacancies.arrow_down()
-    # vacancies.click_macedonia()
+vacancies.cookie()
+vacancies.arrow_down()
+vacancies.click_macedonia()
 vacancies.ads_present()
 
 if ('QA' in driver.page_source):

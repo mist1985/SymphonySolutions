@@ -14,16 +14,15 @@ class BasePage():
 
     # This function is called every time a new object of the base class is created.
     def __init__(self, driver):
-        self.driver=driver
+         self.driver=driver
 
     # This function performs a click on web element whose locator is passed to it.
     def click(self, by_locator):
-        # WebDriverWait(self.driver, 10).until(EC.presence_of_element_located(by_locator)).click()
-        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(by_locator)).click()
+        WebDriverWait(self.driver, 20).until(EC.presence_of_element_located(by_locator)).click()
+        #WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(by_locator)).click()
 
 
-
-    # This function checks if the web element is visible or not
+        # This function checks if the web element is visible or not
     # Returns true or false depending upon its visibility. Hence bool.
 
     def is_visible(self, by_locator):
@@ -31,7 +30,8 @@ class BasePage():
         return bool(element)
 
 
-
+    # def actionchain_mk(self):
+    #     ActionChains(self.driver).move_to_element(Locators.ARROW_DOWN).click(Locators.COUNTRY_MACEDONIA).perform()
 
 
 

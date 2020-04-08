@@ -17,10 +17,19 @@ class VacancyPage(BasePage):
         self.is_visible(Locators.ARROW_DOWN)
         self.click(Locators.ARROW_DOWN)
 
-    # def click_macedonia(self):
+    def cookie(self):
+        self.is_visible(Locators.COOKIE)
+        self.click(Locators.COOKIE)
 
-    #     self.is_visible(Locators.COUNTRY_MACEDONIA)
-    #     self.click(Locators.COUNTRY_MACEDONIA)
+    def click_macedonia(self):
+
+        self.is_visible(Locators.COUNTRY_MACEDONIA)
+        self.click(Locators.COUNTRY_MACEDONIA)
 
     def ads_present(self):
         self.is_visible(Locators.BOX_VACANCIES)
+
+    # def click_skopje(self):
+    #     self.actionchain_mk()
+
+

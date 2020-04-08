@@ -16,8 +16,11 @@ class Locators:
     # -- Choose country locator --
     CHOOSE_COUNTRY = (By.ID, "select2-country-container")
 
+    # -- COOKIE TURN OFF --
+
+    COOKIE = (By.ID, "cn-accept-cookie")
     # -- Macedonia locator --
-    COUNTRY_MACEDONIA = (By.XPATH, "select2-country-result-qick-skopje-macedonia")
+    COUNTRY_MACEDONIA = (By.XPATH, "/html[1]/body[1]/span[1]/span[1]/span[2]/ul[1]/li[5]")
 
 
     # -- Blocks for open vacancies --
